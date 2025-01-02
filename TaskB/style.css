@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000000;
+    color: #000000;
+}
+
+#header{
+    background: url(images/photo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a {
+    position: relative;
+    /* Required for the: :after pseudo-element */
+}
+
+nav ul li a::after {
+    content: ' ';
+    width: 0;
+    /* Initially hidden */
+    height: 3px;
+    background: #ca0808;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+    /* Smooth transition */
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    /* Show on hover */
+}
+
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text p{
+    color: #fff;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.header-text h1 span {
+    color: #ca0808;
+}
+
+.contact-right {
+    flex-basis: 35%;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #000000;
+    color: #fff;
+}
+
+.contact-right form {
+    width: 30%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #e0e0e0;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 16px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #e0e0e0;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright span {
+    color: #ca0808;
+    font-size: 21px;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fbfbfb;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background: #fffefe;
+    color: #000000;
+    transition: background 0.5s;
+}
